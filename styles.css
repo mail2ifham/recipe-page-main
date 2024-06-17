@@ -1,14 +1,156 @@
-/* :root {
-    --
-} */
-
-
-body {
-    font-size: 1rem;
-    font-family: "Outfit", sans-serif;
+* {
+  /* color collection */
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(32, 68%, 32%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  color: var(--Dark-Raspberry);
+  font-size: 1rem;
+  font-family: "Outfit", sans-serif;
+}
 
-@media screen (min-width) {
-    
+.header-image {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container .sub-header {
+  font-family: "Young Serif", serif;
+  padding: 10px 0;
+  color: var(--Wenge-Brown);
+}
+
+.header h1 {
+  color: var(--Dark-Charcoal);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  padding: 15px 0 15px 0;
+  line-height: 1;
+}
+
+hr {
+  width: 100%;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--Light-Grey);
+  margin: 1em 0;
+  padding: 0;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-color {
+  color: var(--Wenge-Brown);
+}
+
+ul li::marker {
+  font-size: 10px;
+}
+
+.preparation-list {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin: 25px 0;
+  width: 70%;
+  padding: 30px;
+  background: var(--Rose-White);
+}
+.preparation-list ul,
+.ingredients-list ul,
+.instructions-list ol {
+  padding: 10px 0 10px 20px;
+}
+.preparation-list ul li,
+.ingredients-list ul li,
+.instructions-list ol li {
+  padding: 5px 0 5px 15px;
+}
+.preparation-list h3 {
+  color: var(--Dark-Raspberry);
+}
+
+.ingredients-list ul {
+  padding: 5px 0 5px 15px;
+}
+
+.nutrition{
+    width: 100%;
+}
+
+table {
+  margin: 20px 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+tr {
+  border-bottom: 1px solid var(--Light-Grey);
+}
+
+td {
+  padding: 10px 20px;
+}
+
+.attribution {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.attribution div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Larger font size for desktop screens */
+@media screen and (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main {
+        
+        background-color: var(--white);
+        width: 90%;
+    }
+    .header-image {
+        border-radius: 15px;
+      }
+
+      table {
+        margin: 20px 0;
+        border-collapse: collapse;
+        width: 60%;
+      }
+      
 }
